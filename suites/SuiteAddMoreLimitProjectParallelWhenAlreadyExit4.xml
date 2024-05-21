@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite test add more five project" verbose="1" >
+    <test name="ProjectManagementSuite" parallel="methods">
+
+        <classes>
+            <class name="com.trinhthianh.testcases.MyProjectsTest">
+                <methods>
+                    <include name="testAddNewProject" />
+                </methods>
+            </class>
+
+            <class name="com.trinhthianh.testcases.MyProjectsTest">
+                <methods>
+                    <include name="testAddMoreThanFiveProject" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
